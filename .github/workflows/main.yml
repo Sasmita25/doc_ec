@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Pull"
-        uses: actions/checkout@v2
+        uses: Sasmita25/fil@main
       - name: Configure AWS
         uses: aws-actions/configure-aws-credentials@v1
         with:
