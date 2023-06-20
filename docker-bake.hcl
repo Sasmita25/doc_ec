@@ -8,5 +8,5 @@ group "default" {
 
 target "build-1" {
   dockerfile = "Dockerfile"
-  tags = ["${{ secrets.AWS_ECR }}:latest2"]
+  tags = ["${{ secrets.AWS_ECR }}:${TAG}"]
 }
