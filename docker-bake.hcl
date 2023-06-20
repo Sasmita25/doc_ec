@@ -8,5 +8,5 @@ group "default" {
 
 target "build-1" {
   dockerfile = "Dockerfile"
-  tags = ["${{ secrets.AWS_ECR }}:${TAG}"]
+  tags = ["376329890665.dkr.ecr.us-east-1.amazonaws.com/krishna-cf-test:${TAG}"]
 }
