@@ -30,6 +30,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: latest
+          tags: us/latest
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
