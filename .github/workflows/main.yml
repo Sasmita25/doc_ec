@@ -21,6 +21,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
-          context: "./docker-bake.hcl"
+          context: "docker-bake.hcl"
           push: true
           tags: user/app:latest
