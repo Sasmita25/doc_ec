@@ -3,15 +3,10 @@ variable "TAG" {
 }
 
 group "default" {
-  targets = ["build-1", "build-2"]
+  targets = ["build-1"]
 }
 
 target "build-1" {
-  dockerfile = "Dockerfile_1"
+  dockerfile = "Dockerfile"
   tags = ["${{ secrets.AWS_ECR }}:latest2"]
-}
-
-target "build-2" {
-  dockerfile = "Dockerfile_2"
-   tags = ["${{ secrets.AWS_ECR }}:${TAG}"]
 }
