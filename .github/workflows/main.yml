@@ -27,6 +27,5 @@ jobs:
           push: true
           tags: |
             "${{secrets.AWS_ECR}}:latest"
-            "${{secrets.AWS_ECR}}:v1"
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
