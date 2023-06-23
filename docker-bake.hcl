@@ -1,5 +1,5 @@
 variable "TAG" {
-  default = "latest"
+  default = ${{env.TAG}}
 }
 
 group "default" {
