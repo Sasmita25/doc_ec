@@ -1,6 +1,8 @@
 name: Build and Push a Docker Image to ECR
 on:
-  workflow_dispatch:
+  push:
+   branches:
+    - test
 jobs:
   docker-login:
     name: "ree"
